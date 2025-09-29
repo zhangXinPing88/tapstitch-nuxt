@@ -1,0 +1,32 @@
+{
+  "name": "frontend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prebuild": "npm run typegen",
+    "build": "nuxt build",
+    "predev": "npm run typegen",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "typegen": "sanity typegen generate",
+    "deploy": "sanity deploy"
+  },
+  "dependencies": {
+    "@nuxt/fonts": "^0.11.0",
+    "@nuxtjs/sanity": "^1.13.3",
+    "@sanity/client": "^7.11.2",
+    "@sanity/image-url": "^1.2.0",
+    "@tailwindcss/vite": "^4.0.4",
+    "date-fns": "^4.1.0",
+    "groq": "^4.10.1",
+    "nuxt": "^3.15.4",
+    "tailwindcss": "^4.0.4",
+    "vue": "latest",
+    "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16"
+  }
+}
