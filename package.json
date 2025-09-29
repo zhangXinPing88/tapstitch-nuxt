@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "prebuild": "npm run typegen",
-    "build": "npx sanity build && nuxt build",
+    "build": "nuxt build",
     "predev": "npm run typegen",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
